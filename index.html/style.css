@@ -1,16 +1,17 @@
 *{
-    color:pink;
+    color:rgb(120, 6, 25);
     margin:10px;
     font:20px Papyrus;
-    background-color:blue;
+    background-color:rgb(255, 164, 193);
 }
 
 p{
-    color:blueviolet;
+    color:rgb(81, 128, 255);
+    font:50px Papyrus;
 }
 
 button.subpage{
-    color:black;
+    color:rgb(29, 0, 252);
 }
 
 
@@ -20,7 +21,8 @@ button.subpage{
 }
 
 .box div{
-    border:solid 1px rgb(207, 145, 145);
+    border:solid 100px rgb(3, 10, 180);
+    
 }
 
 .grid-contrainer{
@@ -30,26 +32,81 @@ button.subpage{
     grid-gap:1px;
 }
 .grid-item1{
-    background:lightgrey;
-    border:solid 1px black;
+    background:rgb(255, 223, 242);
+    border:solid 1px rgb(255, 98, 229);
     grid-column-start:1;
     grid-column-end:3;
     grid-row-start:1;
     grid-row-end:2;
 }
 .grid-item2{
-    background:lightgrey;
+    background:rgb(132, 140, 253);
     border:solid 1px rgb(255, 243, 73);
-    grid-column-start:1;
+    grid-column-start:15;
     grid-column-end:4;
     grid-row-start:1;
     grid-row-end:3;
 }
 .grid-item3{
-    background:lightgrey;
-    border:solid 1px black;
-    grid-column-start:3;
-    grid-column-end:4;
-    grid-row-start:1;
-    grid-row-end:3;
+    background:rgb(255, 101, 101);
+    border:solid 10px rgb(255, 114, 236);
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:4;
+    grid-row-end:5;
+}
+header,section{
+    margin: 2em auto;
+    width:min(75em,100%);
+    background-color: rgb(255, 232, 129);
+    padding:min(2em,15%);
+    border-radius:1em;
+
+}
+nav {
+margin:1em auto 1em auto;
+width: min(1000px,100%);
+font-size: 1.5em ;
+}
+
+nav u1{
+    display: flex;
+    align-items:center;
+    list-style-type: none;
+    gap:2em;
+}
+nav p:first-child{
+    margin-right: auto ;
+}
+
+button.subpage{
+    border-radius: .3em;
+    font-size:1.2em;
+}
+.flex-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:3em;
+}
+h1{
+    font-size:2em;
+    font-family:'Trebuchet MS', 'Lucide Sans Unicode';
+
+}
+.intro_button{
+    display:inline-block;
+    text-decoration:none;
+    color:brown;
+    background-color: rgb(132, 247, 239);
+    padding: .75em 1em;
+    margin-top: 0em;
+    border-radius: .5em;
+    font-weight: 600;
+
+}
+
+.text_container{
+    flex:0 1 40em;
 }

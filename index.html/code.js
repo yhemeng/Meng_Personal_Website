@@ -1,7 +1,7 @@
 
 
 
-var button = document.querySelector("button");
+var button = document.querySelector("#dontlickit");
 
 button.addEventListener("click",myfucntion);
 
@@ -18,3 +18,4 @@ document.querySelector("#my_work1").appendChild(mynode);
 function welcomeToWork1(){
     mynode.innerHTML="thank you";
 }
+
