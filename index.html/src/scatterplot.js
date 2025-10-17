@@ -22,7 +22,7 @@
         ];
 
         // Dimensions and margins
-        const margin = { top: 20, right: 30, bottom: 40, left: 50 },
+        const margin = { top: 120, right: 30, bottom: 40, left: 150 },
             width = 800 - margin.left - margin.right,
             height = 600 - margin.top - margin.bottom;
 

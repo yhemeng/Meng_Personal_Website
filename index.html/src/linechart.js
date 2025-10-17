@@ -9,7 +9,7 @@ const data2 = [
         ];
 
         // Dimensions and margins
-        const margin2 = { top2: 20, right2: 30, bottom2: 40, left2: 50 },
+        const margin2 = { top2: 30, right2: 30, bottom2: 40, left2: 150 },
             width2 = 800 - margin2.left2 - margin2.right2,
             height2 = 600 - margin2.top2 - margin2.bottom2;
 
