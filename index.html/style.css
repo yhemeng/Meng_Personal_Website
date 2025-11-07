@@ -126,7 +126,11 @@ h1{
             stroke: #ffffff;
             stroke-width: 5px;
         }
-        .country:hover {
-fill: orange !important; /* Try this first */
-cursor: pointer;
-}
+         .country.selected {
+  fill: rgb(29, 168, 255); /* Highlight color when selected */
+ }
+ .country {
+  fill: rgb(0, 0, 0); /* Default fill color */
+  stroke: #000000; /* Add a stroke for better visibility */
+  stroke-width: 0.5px;
+ }

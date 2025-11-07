@@ -1,8 +1,7 @@
 (function(){
-    const section = d3.select("#vis-nav");
-    
-   const width = 1300;
-   const height = 1200;
+     const section = d3.select("#vis-nav");
+  const width = 1300;
+  const height = 1500;
  
 
   const svg = section.append("svg")
@@ -15,7 +14,7 @@
  
 
   const projection = d3.geoMercator()
-  .scale(width /6) // Adjust scale as needed
+  .scale(width / 6) // Adjust scale as needed
   .translate([width / 2, height / 2]);
  
 
@@ -23,7 +22,7 @@
  
 
   const zoom = d3.zoom()
-  .scaleExtent([1, 80])
+  .scaleExtent([1, 8])
   .on("zoom", zoomed);
  
 
@@ -159,6 +158,9 @@
   });
  
 
+  let selectedCountry = null; // Keep track of the currently selected country
+ 
+
   // Load Map Data
   d3.json("https://unpkg.com/world-atlas@2/countries-50m.json")
   .then(data => {
@@ -173,6 +175,16 @@
   .attr("d", path)
   .on("mouseover", showTooltip)
   .on("mouseout", hideTooltip)
-  .on("click", flyToCountry); // Click to fly to country
+  .on("click", function(event, d) { // Modified click handler
+  // Remove previous selection
+  if (selectedCountry) {
+  selectedCountry.classed("selected", false);
+  }
+ 
+
+  // Select current item
+  selectedCountry = d3.select(this);
+  selectedCountry.classed("selected", true);
+  });
   });
           })();
