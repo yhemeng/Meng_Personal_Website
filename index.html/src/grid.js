@@ -17,7 +17,7 @@ const gameData = [
   ];
  
 
-  const width = 1450;
+  const width = 450;
   const height = 200;
   const gridSize = 100; // Size of each grid cell
   const numCols = Math.floor(width / gridSize);

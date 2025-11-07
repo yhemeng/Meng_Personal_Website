@@ -126,3 +126,7 @@ h1{
             stroke: #ffffff;
             stroke-width: 5px;
         }
+        .country:hover {
+fill: orange !important; /* Try this first */
+cursor: pointer;
+}
